@@ -1,0 +1,48 @@
+
+
+#needs {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+
+  height: 250px;
+  width: 250px;
+   margin: 0 auto;
+
+
+}
+.a-need {
+  width: 20px;
+  display: flex;
+  margin: 10px;
+  margin: 0 auto;
+
+}
+
+.food-container {
+    display: inline;
+
+}
+
+.water-container {
+    display: inline;
+
+}
+
+.food {
+  display: inline-block;
+  background-color: green;
+  width: 20px;
+  height: 20px;
+  align-items: baseline;
+ }
+
+.water {
+  display: inline-block;
+  background-color: blue;
+  width: 20px;
+  height: 20px;
+  align-items: baseline;
+ }
+
+
