@@ -1,9 +1,21 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import Needs from './needs.js'
 
-var app = document.getElementById('app')
+import App from './components/app.js'
+import { createStore } from 'redux'
+import reducer from './reducer.js'
+const store = createStore(reducer)
 
-ReactDom.render(
-  <Needs />, app
-)
+
+const render = () => {
+
+	ReactDom.render(
+	  <App state={store.getState()} store={store} />, 
+	  document.getElementById('app')
+	)
+	
+}
+
+store.subscribe(render)
+
+render()
